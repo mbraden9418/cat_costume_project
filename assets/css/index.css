@@ -1,8 +1,203 @@
+/*inherited class traits*/
 body {
   margin: 0;
 }
 
+h1{
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1.875em;
+  color: #323232;
+  font-weight: bold;
+}
 
+h2{
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: bold;
+  color:#00897f;
+  font-size:1.5em;
+  text-transform: uppercase;
+}
+h3{
+  font-family: 'PT Serif', serif;
+  font-size: 1em;
+  line-height: 2em;
+  color: #323232;
+}
+
+p{
+  font-family: 'PT Serif', serif;
+  font-size: .875em;
+  line-height: 1.75;
+  color: #323232;
+}
+
+a{
+  font-family: 'PT Serif', serif;
+  font-weight: bold;
+  font-size: 1em;
+  color:#f26522;
+  text-decoration: none;
+}
+nav h1{
+  font-size: 1.5em;
+  color: #323232;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: bold;
+}
+
+nav p{
+  font-family: 'PT Sans', sans-serif;
+  font-size: .9em;
+  color: #323232;
+}
+
+footer h1{
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #FFFFFF;
+  padding-top: 60px;
+}
+
+/*navbar stying*/
+nav {
+  background-color: white;
+  padding:20px;
+  height: auto;
+}
+
+
+nav li{
+  display: inline-block;
+  margin: 30px;
+  margin-bottom: 0px;
+}
+
+nav li a {
+  text-decoration: none;
+}
+.alignRight {
+  float: right;
+}
+
+nav li a.navlinks{
+  text-transform: uppercase;
+}
+
+/* hero section */
+
+.hero {
+  height: 500px;
+  width: 100%;
+  background: url("../images/kats-hero.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/*style intro heading as h1 and paragraph as h3*/
+.intro {
+  text-align: center;
+  background-color: #FFFFFF;
+}
+.introBox{
+  display:inline-block;
+  text-align: center;
+  background-color: #FFFFFF;
+  width: 700px;
+  height: auto;
+}
+.introBox h1{
+  margin-top:80px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.introBox h3{
+  padding-bottom: 80px;
+  text-align: left;
+}
+
+/*boxes about owners */
+.aboutOwners{
+  text-align: center;
+  background-color: #FFFFFF;
+}
+.aboutOwner {
+  width:240px;
+  height:auto;
+  background-color: #eeeeee;
+  display: inline-block;
+  padding: 30px;
+  margin-bottom: 80px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.aboutOwner h2{
+  text-align: center;
+  padding-bottom: 25px;
+}
+.aboutOwner p{
+  text-align: left;
+}
+/*Get In Touch section div*/
+.getInTouch{
+  text-align: center;
+  background-color: #eeeeee;
+}
+.getInTouch h1{
+  padding-top: 80px;
+  padding-bottom: 45px;
+  text-align: center
+}
+.inTouchBox {
+  background-color: #FFFFFF;
+  padding: 30px;
+  width:300px;
+  display: inline-block;
+  margin-bottom: 80px;
+  margin-right: 30px;
+  margin-left:30px;
+}
+.inTouchBox h3{
+  text-align: left;
+}
+.addressLink a{
+  text-align: right;
+}
+
+/*Cat Mugshots*/
+.catMugs {
+  background-color: #FFFFFF;
+  text-align: center;
+}
+.catMug{
+  border-radius: 50%;
+  width: 200px;
+  margin-right: 22.5px;
+  margin-left: 22.5px;
+  margin-bottom: 80px;
+}
+
+/*bottom map image*/
+.mapPicture {
+  height: 300px;
+  width: 100%;
+  background: url("../images/kats-map.jpg") no-repeat;
+  background-size: cover;
+  /*background-position: center center;*/
+  margin: 0;
+}
+
+
+/*footer design*/
+footer{
+  text-align: center;
+  height: 125px;
+  background-color: #00897f;
+  margin: 0;
+  padding: 0;
+}
 /* On devices wider than 660px */
 @media(min-width: 660px) {
 }
