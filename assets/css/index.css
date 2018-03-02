@@ -66,6 +66,7 @@ nav {
   background-color: white;
   padding:0;
   margin: 0;
+  width: 800px;
 }
 
 
@@ -90,6 +91,7 @@ nav li a.navlinks{
 
 .hero {
   height: 500px;
+
   width: 100%;
   background: url("../images/kats-hero.jpg") no-repeat;
   background-size: cover;
@@ -107,8 +109,8 @@ nav li a.navlinks{
   background-color: #FFFFFF;
   width: auto;
   height: auto;
-  padding-left:60px;
-  padding-right: 60px;
+  padding-left:30px;
+  padding-right: 30px;
 }
 .introBox h1{
   margin-top:80px;
@@ -121,6 +123,8 @@ nav li a.navlinks{
   padding:0;
   margin-bottom: 80px;
   text-align: left;
+  width: auto;
+  max-width: 600px;
 }
 
 /*boxes about owners */
@@ -201,6 +205,7 @@ nav li a.navlinks{
 footer{
   text-align: center;
   height: 125px;
+  width:100%;
   background-color: #00897f;
   margin: 0;
   padding: 0;
