@@ -17,6 +17,7 @@ h2{
   font-size:1.5em;
   text-transform: uppercase;
 }
+
 h3{
   font-family: 'PT Serif', serif;
   font-size: 1em;
@@ -57,13 +58,14 @@ footer h1{
   font-size: 1.25em;
   color: #FFFFFF;
   padding-top: 60px;
+  margin: 0;
 }
 
 /*navbar stying*/
 nav {
   background-color: white;
-  padding:20px;
-  height: auto;
+  padding:0;
+  margin: 0;
 }
 
 
@@ -161,10 +163,10 @@ nav li a.navlinks{
 }
 .inTouchBox h3{
   text-align: left;
-}
-.addressLink a{
+
 
 }
+
 
 /*Cat Mugshots*/
 .catMugs {
@@ -185,8 +187,9 @@ nav li a.navlinks{
   width: 100%;
   background: url("../images/kats-map.jpg") no-repeat;
   background-size: cover;
-  /*background-position: center center;*/
+  background-position: center center;
   margin: 0;
+  padding: 0;
 }
 
 
@@ -198,6 +201,7 @@ footer{
   margin: 0;
   padding: 0;
 }
+
 /* On devices wider than 660px */
 @media(min-width: 660px) {
 }
