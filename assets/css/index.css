@@ -159,6 +159,7 @@ nav li a.navlinks{
   background-color: #eeeeee;
 }
 .getInTouch h1{
+  display: none;
   padding-top: 80px;
   padding-bottom: 45px;
   margin-bottom: 0px;
@@ -187,10 +188,22 @@ nav li a.navlinks{
 }
 .catMug{
   border-radius: 50%;
-  width: 200px;
+  width: 250px;
   margin-right: 22.5px;
   margin-left: 22.5px;
   margin-bottom: 80px;
+}
+
+#gangster {
+  display: none;
+}
+
+#tropical {
+  display: none;
+}
+
+#killah {
+  margin-top: 80px;
 }
 
 /*bottom map image*/
@@ -218,6 +231,10 @@ footer{
 /* On devices wider than 660px */
 @media screen and (min-width: 660px)
 {
+  .getInTouch h1 {
+    display: block;
+
+  }
   .inTouchBox{
     background-color: #FFFFFF;
     margin-bottom: 80px;
@@ -235,8 +252,19 @@ footer{
     background-color: #FFFFFF;
   }
 
+#tropical {
+  display: inline-block;
+}
+#killah{
+  margin-top: 0;
+}
+
 }
 
 /* On devices wider than 940px */
-@media screen and (min-width: 940px) {
+@media screen and (min-width: 940px)
+{
+  #gangster{
+    display: inline-block;
+  }
 }
