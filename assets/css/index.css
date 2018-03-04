@@ -91,8 +91,7 @@ nav li a.navlinks{
 
 .hero {
   height: 500px;
-
-  width: 100%;
+  min-width: 100%;
   background: url("../images/kats-hero.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
@@ -158,10 +157,12 @@ nav li a.navlinks{
 .getInTouch h1{
   padding-top: 80px;
   padding-bottom: 45px;
+  margin-bottom: 0px;
+  margin-top: 0px;
   text-align: center
 }
 .inTouchBox {
-  background-color: #FFFFFF;
+  background-color: #eeeeee;
   padding: 30px;
   width:300px;
   display: inline-block;
@@ -171,8 +172,6 @@ nav li a.navlinks{
 }
 .inTouchBox h3{
   text-align: left;
-
-
 }
 
 
@@ -212,9 +211,14 @@ footer{
 }
 
 /* On devices wider than 660px */
-@media(min-width: 660px) {
+@media screen and (min-width: 660px)
+{
+  .inTouchBox{
+    background-color: #FFFFFF;
+  }
+
 }
 
 /* On devices wider than 940px */
-@media(min-width: 940px) {
+@media screen and (min-width: 940px) {
 }
