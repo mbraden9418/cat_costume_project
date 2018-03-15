@@ -25,19 +25,21 @@ h3{
   color: #323232;
 }
 
-p{
+p {
   font-family: 'PT Serif', serif;
   font-size: .875em;
   line-height: 1.75;
   color: #323232;
 }
 
-a{
+/*a*/
+.inTouchBox a {
   font-family: 'PT Serif', serif;
   font-weight: bold;
   font-size: 1em;
   color:#f26522;
   text-decoration: none;
+  /* Ok so even though there's only one link on this page, that's not likely to occur IRL, so i'd make this selector a bit more specific! You have an inTouchBox class, but you didn't use it so you could remove it and target the link using its parents class, inTouchBox */
 }
 nav h1{
   font-size: 1.5em;
@@ -46,6 +48,8 @@ nav h1{
   font-weight: bold;
   margin-left: 80px;
 }
+
+/* No longer using a p in the nav, so let's move this to the nav li a declaration */
 
 nav p{
   font-family: 'PT Sans', sans-serif;
@@ -68,7 +72,9 @@ nav {
   background-color: white;
   padding:0;
   margin: 0;
-  width: 800px;
+  /*width: 800px;*/
+  /*Holy horizontal scroll on mobile, batman. Instead of width: 800px, set it to width: 100px. That way it will scale to fit width of all browsers! */
+  width: 100%;
 }
 
 
@@ -80,15 +86,22 @@ nav li{
 
 nav li a {
   text-decoration: none;
+  font-family: 'PT Sans', sans-serif;
+  font-size: .9em;
+  color: #323232;
+  display: none;
+  text-transform: uppercase;
+  /*text-decoration: none;*/
 }
 
 .alignRight {
   float: right;
 }
 
-nav li a.navlinks{
+nav li a/*.navlinks*/{
   text-transform: uppercase;
 }
+/* you can move this up to the earlier selector! */
 
 /* hero section */
 
@@ -101,7 +114,10 @@ nav li a.navlinks{
 }
 
 /*style intro heading as h1 and paragraph as h3*/
-.intro {
+/*.intro
+this box isn't really needed - you can instead apply the styles to .main!
+*/
+.main {
   text-align: center;
   background-color: #FFFFFF;
 }
@@ -113,7 +129,12 @@ nav li a.navlinks{
   height: auto;
   padding-left:30px;
   padding-right: 30px;
+  /* I would apply a width to the introbox, that way your h1 and h3 can take up the full width of that box.
+  */
+  width: auto;
+  max-width: 600px;
 }
+
 .introBox h1{
   margin-top:80px;
   text-align: center;
@@ -125,8 +146,8 @@ nav li a.navlinks{
   padding:0;
   margin-bottom: 80px;
   text-align: left;
-  width: auto;
-  max-width: 600px;
+  /*width: auto;
+  max-width: 600px;*/
 }
 
 /*boxes about owners */
@@ -262,7 +283,8 @@ footer{
   height: 400px;
 }
 
-nav p{
+/*nav p -- changing this to nav a :)*/
+nav li a {
   display: inline-block;
 }
 

@@ -17,19 +17,22 @@
           <h1>Kat's Costume Shop</h1>
         </li>
         <li class="about alignRight"><a class="navlinks" href="#aboutOwner">
-          <p>About</p>
+        <!-- You could probably get rid of the 'navlinks' class and just target it with the 'a'.  -->
+          About
         </a></li>
         <li class="contact alignRight"><a class="navlinks" href="#getInTouch">
-          <p>Contact</p>
+          Contact
         </a></li>
-      </p>
       </ul>
       </nav>
     <div class="splash hero">
     </div>
-
+  <!--nice use of background image! -->
     <div class='main'>
       <div id="intro" class="intro">
+        <!--nice use of background image! -->
+        <!--I would either use an id OR a class here, not both... and actually, you can probably get rid of the first introbox div, and apply those styles to .main'-->
+
         <div class="introBox">
           <h1> Get Some Serious Cat-titude</h1>
 
@@ -43,6 +46,10 @@
       </div>
 
         <div id="aboutOwner" class="aboutOwners">
+          <!--i would keep the aboutOwner ID and target that way. then maybe use a class like 'about_box' to keep it less confusing. That way you can assume 'about_box' is one box inside aboutOwner -->
+
+          <!--Good job targeting both boxes with one class!  -->
+
 
           <div class="aboutOwner">
             <h2>About Kat</h2>
@@ -76,6 +83,8 @@
 
 
       <div class="getInTouch" id="getInTouch">
+        <!--I would either use an id OR a class here, not both -->
+
         <h1>Get In Touch</h1>
 
         <div class="inTouchBox">
@@ -86,6 +95,7 @@
         SUNDAY 12pm - 4pm<br>
         </h3>
         </div>
+        <!--Nice job! i'd recommend using a separate h3 for each line, but that's preference -->
 
         <div class="inTouchBox">
         <h2>Contact Info</h2>
